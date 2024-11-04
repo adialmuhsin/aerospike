@@ -6,7 +6,7 @@
 $ podman run -d --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server
 ```
 
-### Connect to aerospike server
+#### Connect to aerospike server
 #### aql
 ```sh
 $ podman run -ti aerospike/aerospike-tools:latest aql -h  $(podman inspect -f '{{.NetworkSettings.IPAddress }}' aerospike)
@@ -91,3 +91,15 @@ test     |6376ab85349e:3000|   0|     1|    0.000  |0.000  |0.000  |0.000  |    
 test     |                 |    |      |    0.000  |1.000  |1.000  |0.000  |    0.000  |0.000  |0.000  |    0.000  |0.000  |0.000
 Number of rows: 2
 ```
+
+## Reporting Issues
+
+Aerospike Enterprise evaluation users, if you have any problems with or questions about this image, please post on the [Aerospike discussion forum](https://discuss.aerospike.com) or open an issue in [aerospike/aerospike-server-enterprise.docker](https://github.com/aerospike/aerospike-server-enterprise.docker/issues).
+
+Enterprise customers are welcome to participate in the community forum, but can also report issues through the [enterprise support system](https://support.aerospike.com/).
+
+Community Edition users may report problems or ask questions about this image on the [Aerospike Forums](https://discuss.aerospike.com/) or open an issue in [aerospike/aerospike-server.docker](https://github.com/aerospike/aerospike-server.docker/issues).
+
+## License
+
+If you are using Aerospike Database CE refer to the license information in the [aerospike/aerospike-server](https://github.com/aerospike/aerospike-server) repository.
